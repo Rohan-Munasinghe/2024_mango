@@ -1,0 +1,66 @@
+\begin{thebibliography}{10}
+
+\bibitem{RFID_basics}
+``Rfid basics & resources.'' Available at
+  \url{https://rfid4u.com/rfid-basics-resources/} ().
+
+\bibitem{ruiz2011role}
+L.~Ruiz-Garcia and L.~Lunadei, ``The role of rfid in agriculture: Applications,
+  limitations and challenges,'' {\em Computers and Electronics in Agriculture},
+  vol.~79, no.~1, pp.~42--50, 2011.
+
+\bibitem{apple}
+C.~Wu, H.~Zhang, J.~Zhang, W.~Tian, and H.~Cheng, ``An orchard management
+  systemwith rfid-based apple tree identify detection,'' in {\em 2013 Fourth
+  International Conference on Digital Manufacturing & Automation},
+  pp.~180--184, 2013.
+
+\bibitem{behera2021tree}
+S.~K. Behera, P.~K. Sethy, S.~K. Sahoo, S.~Panigrahi, and S.~C. Rajpoot,
+  ``On-tree fruit monitoring system using iot and image analysis,'' {\em
+  Concurrent Engineering}, vol.~29, no.~1, pp.~6--15, 2021.
+
+\bibitem{architecture}
+P.~Pierleoni, R.~Concetti, A.~Belli, and L.~Palma, ``Amazon, google and
+  microsoft solutions for iot: Architectures and a performance comparison,''
+  {\em IEEE Access}, vol.~8, pp.~5455--5470, 2020.
+
+\bibitem{ESPNow}
+K.~M. S, S.~M, L.~R, A.~S, and S.~Setty, ``Design and development of wireless
+  sensor network based data logger with esp-now protocol,'' in {\em 6th
+  International Conference for Convergence in Technology (I2CT)}, pp.~1--5,
+  2021.
+
+\bibitem{power}
+D.~Rimpas and A.~Kiatipis, ``Charging strategy effect on lithium polymer
+  battery capacity: A case study,'' vol.~11, pp.~107--118, 11 2020.
+
+\bibitem{7566486}
+K.~K.C, ``Wireless mesh network: A survey,'' in {\em 2016 International
+  Conference on Wireless Communications, Signal Processing and Networking
+  (WiSPNET)}, pp.~1966--1970, 2016.
+
+\bibitem{rtos}
+M.-Y. Zhu, ``Understanding freertos: A requirement analysis,'' 05 2011.
+
+\bibitem{rfid_1356Mz}
+V.~Cernatescu and M.~Vladescu, ``An implementation of a 13.56 mhz rfid
+  reader,'' in {\em 2014 IEEE 20th International Symposium for Design and
+  Technology in Electronic Packaging (SIITME)}, pp.~103--104, 2014.
+
+\bibitem{webVsDesk}
+P.~M. Martin~Löfberg, ``Web vs. standalone application.'' Available at
+  \url{http://www.diva-portal.org/smash/record.jsf?pid=diva23A828988&dswid=7259}
+  (2005).
+
+\bibitem{jones2015json}
+M.~Jones, J.~Bradley, and N.~Sakimura, ``Json web token (jwt),'' tech. rep.,
+  2015.
+
+\bibitem{gyHorodi2015comparative}
+C.~Gy{\H{o}}r{\"o}di, R.~Gy{\H{o}}r{\"o}di, G.~Pecherle, and A.~Olah, ``A
+  comparative study: Mongodb vs. mysql,'' in {\em 2015 13th International
+  Conference on Engineering of Modern Electric Systems (EMES)}, pp.~1--6, IEEE,
+  2015.
+
+\end{thebibliography}
