@@ -1,0 +1,112 @@
+MIME-Version: 1.0
+Date: Fri, 29 Dec 2023 14:46:36 +0530
+From: 
+	IEEE Transactions on AgriFood Electronics
+	 <onbehalfof@manuscriptcentral.com>
+Subject: IEEE Transactions on AgriFood Electronics - Decision on
+ ManuscriptID TAFE-10-0063-2023.R1
+Thread-Topic: IEEE Transactions on AgriFood Electronics - Decision on
+ ManuscriptID TAFE-10-0063-2023.R1
+To: "rohan@uom.lk" <rohan@uom.lk>
+Cc: "rohan@uom.lk" <rohan@uom.lk>, 
+	"muhammedimdaad16@gmail.com" <muhammedimdaad16@gmail.com>, 
+	"senudajayalath1@gmail.com" <senudajayalath1@gmail.com>, 
+	"pchamikagangul@gmail.com" <pchamikagangul@gmail.com>, 
+	"mkt.sampath97@gmail.com" <mkt.sampath97@gmail.com>
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+29-Dec-2023<br /><br />Dear Prof. Munasinghe:<br /><br />Manuscript ID TAFE=
+-10-0063-2023.R1 entitled "RFID Based Fruit Monitoring and Orchard Manageme=
+nt System" which you submitted to the IEEE Transactions on AgriFood Electro=
+nics, has been reviewed. =C2=A0The comments of the reviewer(s) are included=
+ at the bottom of this letter.<br /><br />The reviewer(s) have recommended =
+publication, but also suggest some revisions to your manuscript. =C2=A0Ther=
+efore, I invite you to respond to the reviewer(s)' comments and revise your=
+ manuscript.<br /><br />To revise your manuscript, log into https://ieee.at=
+yponrex.com/journal/TAFE and enter your Author Dashboard where you will fin=
+d your manuscript with a "Revise Submission" link.<br /><br /><br />You wil=
+l be unable to make your revisions on the originally submitted version of t=
+he manuscript. =C2=A0Instead, revise your manuscript using a word processin=
+g program and save it on your computer. =C2=A0Please also highlight the cha=
+nges to your manuscript within the document by using the track changes mode=
+ in MS Word or by using bold or colored text.<br /><br />Once the revised m=
+anuscript is prepared, you can upload it and submit it through your Author =
+Center.<br /><br />When submitting your revised manuscript, you will be abl=
+e to respond to the comments made by the reviewer(s) in the space provided.=
+ =C2=A0You can use this space to document any changes you make to the origi=
+nal manuscript. =C2=A0In order to expedite the processing of the revised ma=
+nuscript, please be as specific as possible in your response to the reviewe=
+r(s).<br /><br />Because we are trying to facilitate timely publication of =
+manuscripts submitted to the IEEE Transactions on AgriFood Electronics, you=
+r revised manuscript should be submitted by 27-Feb-2024. =C2=A0If it is not=
+ possible for you to submit your revision by this date, we may have to cons=
+ider your paper as a new submission.<br /><br />Once again, thank you for s=
+ubmitting your manuscript to the IEEE Transactions on AgriFood Electronics =
+and I look forward to receiving your revision.<br /><br />Sincerely,<br />P=
+rof. Danilo Demarchi<br />Editor-in-Chief, IEEE Transactions on AgriFood El=
+ectronics<br />danilo.demarchi@polito.it<br /><br /><br />Associate Editor =
+Comments to Author:<br /><br />Associate Editor<br />Comments to the Author=
+:<br />dear authors,<br /><br />based on the reviewers comments enclosed, w=
+e are kindly asking to revise the manuscript accordingly.<br /><br />Please=
+ emphasize well the scientific and technical novelty of the paper, which at=
+ the moment seems =C2=A0rather limited.<br /><br />regards<br />Luisa Petti=
+<br />AE IEEE TAFE<br /><br />---------------------------------------------=
+-------------------------------------------------<br />Reviewer 1:<br />The=
+ revised version of the paper =E2=80=9CRFID Based Fruit Monitoring and Orch=
+ard Management System=E2=80=9D addresses all the comments I made in the fir=
+st revision, and it=E2=80=99s considerably improved compared to the origina=
+l draft.<br />I think the paper is now acceptable for publication, even tho=
+ugh some of the amendments are minimal, e.g. the pilot with only 20 mangos,=
+ which is hardly statistically significant.<br /><br />Reviewer 2<br />The =
+article has been improved compared to the previous version. However, the da=
+ta provided as a result of the small-scale pilot project implementation is =
+insufficient. At moment this article is not suitable for publishing as it i=
+s, due to lake of proper device characterization plots (regarding the devic=
+e all the given numbers are based on assumption/approximation) and not havi=
+ng enough data regarding field tests, below are my suggestions for the auth=
+or:<br /><br />- I would recommend to rewrite the description of the sectio=
+n "Fallen and Missing Fruits". This section could be improved by providing =
+direct explanation of the mechanism for the detection of missing and fallen=
+ fruits. Additionally, a table could be added to show the number of detecte=
+d missing and fallen fruits during each spraying/scan. This would help read=
+ers better understand the process and results of the study.<br /><br />-The=
+ field test data of a few mangos are not enough. The absence of time stamps=
+ for each spraying and scan makes it difficult to understand the gap betwee=
+n each spray. For the sake of larger data set, It would be better to increa=
+se the number of trees and periodic scanning.<br /><br /><br />Reviewer Det=
+ailed Comments:<br /><br /><br />1) Summarize the main thesis of the paper =
+in 2-3 sentences:<br /><br /><br />2) Is there an identification of a conce=
+ptual framework, theoretical framework or other used to inspire/lead the st=
+udy?<br /><br /><br />3) Does the paper refer to seminal works? Are there a=
+ny missing?<br /><br /><br />4) Is there a clear methodology statement?<br =
+/><br /><br />5) Are there clear results (qualitative or quantitative) or o=
+ther?<br /><br /><br />6) Is there technical rigour in the domain of Social=
+ Implications of Technology?<br /><br /><br />7) Is this paper an original =
+contribution to knowledge?<br /><br /><br />8) Was ethics approval gained? =
+If so, have the details been provided?<br /><br /><br />9) Is the paper wri=
+tten well: grammatically and stylistically.<br /><br /><br /><br />Reviewer=
+ General Comments:<br /><br />Reviewer: 1<br /><br />Comments to the Author=
+<br />The revised version of the paper =E2=80=9CRFID Based Fruit Monitoring=
+ and Orchard Management System=E2=80=9D addresses all the comments I made i=
+n the first revision, and it=E2=80=99s considerably improved compared to th=
+e original draft.<br />I think the paper is now acceptable for publication,=
+ even though some of the amendments are minimal, e.g. the pilot with only 2=
+0 mangos, which is hardly statistically significant.<br /><br /><br /><br /=
+>Reviewer: 2<br /><br />Comments to the Author<br />The article has been im=
+proved compared to the previous version. However, the data provided as a re=
+sult of the small-scale pilot project implementation is insufficient. At mo=
+ment this article is not suitable for publishing as it is, due to lake of p=
+roper device characterization plots (regarding the device all the given num=
+bers are based on assumption/approximation) and not having enough data rega=
+rding field tests, below are my suggestions for the author:<br /><br />- I =
+would recommend to rewrite the description of the section "Fallen and Missi=
+ng Fruits". This section could be improved by providing direct explanation =
+of the mechanism for the detection of missing and fallen fruits. Additional=
+ly, a table could be added to show the number of detected missing and falle=
+n fruits during each spraying/scan. This would help readers better understa=
+nd the process and results of the study.<br /><br />-The field test data of=
+ a few mangos are not enough. The absence of time stamps for each spraying =
+and scan makes it difficult to understand the gap between each spray. For t=
+he sake of larger data set, It would be better to increase the number of tr=
+ees and periodic scanning.

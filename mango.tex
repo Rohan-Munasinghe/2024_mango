@@ -8,6 +8,29 @@
 \usepackage{textcomp}
 \usepackage{balance}
 \usepackage{xcolor}
+%\usepackage{lipsum}
+\usepackage{scalerel}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+\definecolor{orcidlogocol}{HTML}{A6CE39}
+\tikzset{
+	orcidlogo/.pic={
+		\fill[orcidlogocol] svg{M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z};
+		\fill[white] svg{M86.3,186.2H70.9V79.1h15.4v48.4V186.2z}
+		svg{M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z}
+		svg{M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z};
+	}
+}
+
+\newcommand\orcidicon[1]{\href{https://orcid.org/#1}{\mbox{\scalerel*{
+				\begin{tikzpicture}[yscale=-1,transform shape]
+					\pic{orcidlogo};
+				\end{tikzpicture}
+			}{|}}}}
+
+\usepackage{hyperref} %<--- Load after everything else
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \newcommand{\linebreakand}{%
@@ -18,26 +41,26 @@
 
 \begin{document}
 \title{RFID Based Fruit Monitoring and Orchard Management System}
-\author{B.~H. M.~Imdaad, S.~I.~Jayalath, P.~C.~G.~Mahiepala, M.~K.~T.~Sampath,\\ and S.~R.~Munasinghe,~\IEEEmembership{Senior Member,~IEEE}
-\thanks{B.~H. M.~Imdaad, S.~I.~Jayalath, P.~C.~G.~Mahiepala, T.~Sampath, and S.~R.~Munasinghe are with the Department of Electronic and Telecommunication Engineering, University of Moratuwa, Moratuwa, 10400 Sri Lanka e-mail: rohan@uom.lk.}
-\thanks{S.~R.~Munasinghe is a visiting Fellow at the Department of global Development, College of Agriculture and Life Sciences, Cornell University, Ithaca, NY 14850, USA.}
-\thanks{Manuscript received Month xx, 20yy; revised Month xx, 20yy.}}
+\author{B.~H. M.~Imdaad \orcidicon{0009-0003-0377-5055}, S.~I.~Jayalath \orcidicon{0009-0003-7056-8603}, P.~C.~G.~Mahiepala \orcidicon{0009-0006-9708-2488}, M.~K.~T.~Sampath \orcidicon{0009-0003-6823-9958},\\ and S.~R.~Munasinghe \orcidicon{0000-0003-3445-4767},~rohan@uom.lk,~\IEEEmembership{Senior Member,~IEEE}
 
-\markboth{IEEE Transactions on Agrifood Electronics, Vol.~xx, No.~y, Month~20yy}
+\thanks{Manuscript received 4 October 2023; revised 12 December 2023, 9 February 2024, and 11 May 2024; accepted 12 May 2024. This work was non-monetarily supported by Nelna Agri (Pvt.) Ltd. This article was recommended by Associate Editor Luisa Petti.}
+\thanks{B.~H. M.~Imdaad, S.~I.~Jayalath, P.~C.~G.~Mahiepala, T.~Sampath, and S.~R.~Munasinghe ORCID-0000-0003-3445-4767, email:~rohan@uom.lk are with the Department of Electronic and Telecommunication Engineering, University of Moratuwa, Moratuwa, 10400 Sri Lanka.}
+\thanks{S.~R.~Munasinghe is a visiting fellow at the Department of Global Development, College of Agriculture and Life Sciences, Cornell University, Ithaca, NY 14850, USA.}
+\thanks{Digital Object Identifier 10.1109/TAFE.2024.3402710}}
+
+\markboth{IEEE Transactions on Agrifood Electronics, Vol.~00,~No.~0,~2024}
 {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
 
 \maketitle
 \begin{abstract}
-	This research presents an efficient fruit monitoring and orchard management system to replace the existing paper-based manual process. The new method is based on five state-of-the-art technologies, namely Radio Frequency IDentification (RFID), Wi-Fi network, Mobile App, Coud database/server, and Web Application. This paper presents the proper integration of these technologies to provide an effective, worker-friendly, and cost-effective solution to the problem.\par
-	The proposed method starts by attaching RFID tags to each tree and each fruit and registering them in the cloud database through RFID scanning, Wi-Fi, and mobile connectivity. The cloud server visualizes the status of the orchard and implements inventory management. Workers use a hand device for tasks such as “bagging” where each fruit is put into protective bags at an early age, spraying agrochemicals a few times within the season, and registering plucked fruits at the end. The orchard manager carries out task assignments and worker deployment on the web application. Each worker gets notified of the assigned tasks on his field device, and when such tasks are accomplished, the status is updated in the cloud database. Using this system, each fruit is monitored from the initial covering state to the final plucking state including timely spraying of agro-chemicals within the season.\par
-	On the contrary, the existing paper-based manual process suffers from improper spraying that leads to disease-spreading infestations and loss of yield. The ad-hoc task assignment and worker deployment in the present practice reduce worker efficiency and increase the cost of production. The inability to monitor the fallen and missing fruits is also an issue in the existing practice. Due to these inefficiencies, the price of fruit has gone up to a limit that is not affordable to the public, hence unprofitable to the grower as well. In this context, the proposed solution will help monitor and manage fruit orchards efficiently, which will increase the quality and quantity of the yield while lowering the cost of production. The proposed solution was customized to Tom EJC mango variety and was successfully field-tested with the largest mango grower in Sri Lanka. 
+	This research presents an efficient fruit monitoring and orchard management system to replace the existing paper-based manual process. The new method is based on five state-of-the-art technologies, namely Radio Frequency IDentification (RFID), Wi-Fi network, Mobile App, Coud database/server, and Web Application. This paper presents the proper integration of these technologies to provide an effective, worker-friendly, and cost-effective solution to the problem. The proposed method starts by attaching RFID tags to each tree and each fruit and registering them in the cloud database. The cloud server visualizes the status of the orchard and implements inventory management. Workers use a hand device for tasks such as bagging, spraying, and plucking. The orchard manager carries out task assignments and worker deployment on the web application. Each worker gets notified of the assigned tasks on his field device, and when such tasks are accomplished, the status is updated in the cloud database. Using this system, each fruit is monitored from the initial covering state to the final plucking state. On the contrary, the existing paper-based manual process suffers from improper spraying that leads to disease-spreading infestations and loss of yield. Due to the existing inefficiencies  the price of fruit has gone up to a limit that is not affordable to the public, hence unprofitable to the grower as well. In this context, the proposed solution will help monitor and manage fruit orchards efficiently, which will increase the quality and quantity of the yield while lowering the cost of production. 
 \end{abstract}
 \begin{IEEEkeywords}
-Fruit monitoring, Handheld RFID, Fruit inventory management, Internet of things
+Fruit inventory management, Fruit monitoring, Handheld Radio Frequency Identification (RFID), Internet of Things (IoT).
 \end{IEEEkeywords}
 \section{Introduction}
 Smart monitoring and management of fruit orchards are critically important to high-quality yield and lower cost of production. In \cite{apple}, Wu et. al. present a fruit monitoring and management system for an apple orchard in which the production process is monitored to reduce the time and labor. This research also uses RFID technology \cite{RFID} to identify fruit trees and to monitor the spraying of agrochemicals and fertilizers. Behera et. al. \cite{behera2021tree} proposes a method to monitor fruits in trees using sensors and  Internet of Things (IoT) technology in that fruit status and environmental conditions are monitored using cameras and sensors. The cameras used are solar-powered and they are Wi-Fi connected for remote viewing for farm management. Rain sensors, temperature sensors, and moisture sensors are deployed to access the environmental information. This method requires infrastructure development over the entire orchard, which makes it costly and difficult to scale for commercial deployment. The EU Horizon project \cite{EU2020} proposes a method based on artificial intelligence to accurately count apples with the size that will help growers to know the harvest with higher accuracy. Several high-tech solutions including sensor networks \cite{Yuan}, drones \cite{Suryawansi}, robots \cite{Mengoli}, and LiDaR \cite{Tsoulias}, have been tested for orchard management and fruit monitoring, however much of it is not scalable and cost-effective for commercial deployment. Hence, there is a need for a cost-effective, and scalable solution for fruit monitoring in large orchards. In this context, this research proposes a novel technique for on-tree fruit monitoring and orchard operation scheduling. The method is custom-designed for mangoes to improve the quality of yield and reduce the cost of operations (bagging, spraying, and plucking). It also helps reduce the loss of yield due to pest attacks and ill-treatment. The method was designed by proper integration of state-of-the-art technologies \cite{Ruiz}, \cite{architecture}.\par
-The proposed solution requires RFID tags attached to each fruit and each tree. Once scanned, the fruit and tree information is sent to the cloud server/database. The web application visualizes the orchard status for the agronomist to schedule tasks and assign workers. The scheduled tasks are communicated to the hand devices of the workers. As the workers perform the scheduled tasks the orchard status is updated concurrently while issuing flags if the task is not performed as scheduled. This way, timely fruit treatment, high-quality yield, and efficient labor deployment can be guaranteed. The RFID tags are reusable because they are protected inside the translucent bags. The hand device component cost is only \$25, and only about fifty such devices are needed even for a large orchard because the workers are deployed in small teams of six to ten workers. Due to the same reason, the proposed solution can be implemented in a large orchard quite easily by deploying as many small worker groups as needed. This does not require any scale-dependent modifications to the solution because worker groups operate independently. The functionality of the proposed system was verified through a field test.
+The proposed solution requires RFID tags attached to each fruit and each tree. Once scanned, the fruit and tree information are sent to the cloud server/database. The web application visualizes the orchard status for the agronomist to schedule tasks and assign workers. The scheduled tasks are communicated to the hand devices of the workers. As the workers perform the scheduled tasks the orchard status is updated concurrently while issuing flags if the task is not performed as scheduled. This way, timely fruit treatment, high-quality yield, and efficient labor deployment can be guaranteed. The RFID tags are reusable because they are protected inside the translucent bags. The hand device component cost is only \$25, and only about fifty such devices are needed even for a large orchard because the workers are deployed in small teams of six to ten workers. Due to the same reason, the proposed solution can be implemented in a large orchard quite easily by deploying as many small worker groups as needed. This does not require any scale-dependent modifications to the solution because worker groups operate independently. The functionality of the proposed system was verified through a field test.
 \section{Mango Orchard Management}
 In mango orchards, where the Tom EJC mango variety shown in Fig.\ref{fig_TomEJC} is grown, the first activity is "bagging", in which each fruit at the size of a chicken-eg is placed inside a translucent bag to protect them from pests. The bag also helps the fruit get a bright yellow color. For the rest of the season, until plucking the fruits remain inside these bags as shown in Fig.\ref{fig_TomEJC}.
 \begin{figure}[h]
@@ -46,7 +69,7 @@ In mango orchards, where the Tom EJC mango variety shown in Fig.\ref{fig_TomEJC}
 	\caption{Tom EJC mango covered in a carbon-coated protective bag. Photo from Nelna Agri website}
 	\label{fig_TomEJC}
 \end{figure}
-The existing practice is manual "bagging" in that a worker records on paper each tree and the number of fruits it bears. The same information is written on the outer surface of each bag. A few times within the season, workers are deployed to spray antifungal chemicals onto the fruits for that the workers have to read the date information on each bag, open the relevant bags of respective age, and spray the chemicals. After about seventy-five days, workers open the bags, inspect the maturity, and pluck the mature fruits. Premature fruits are kept in the bag for a few more days. There are about fifty thousand mango trees in the orchard, and in one season, nearly around a million mangos are plucked. Given the scale, even a marginal improvement to the existing practice will result in a significant return on investment.
+The existing practice is manual "bagging" in that a worker records on paper each tree and the number of fruits it bears. The same information is written on the outer surface of each bag. A few times within the season, workers are deployed to spray antifungal chemicals onto the fruits for that the workers have to read the date information on each bag, open the relevant bags of respective age, and spray the chemicals. After about seventy-five days, workers open the bags, inspect the maturity, and pluck the mature fruits. Premature fruits are kept in the bag for a few more days. The ad-hoc task assignment and worker deployment in the present practice reduces worker efficiency and increases the cost of production. There are about fifty thousand mango trees in the orchard, and in one season, nearly around a million mangos are plucked. Given the scale, even a marginal improvement to the existing practice will result in a significant return on investment.
 \section{Proposed Fruit Monitoring and Orchard Management System}
 Figure \ref{fig_system} shows the block diagram of the proposed solution. This system consists of the following five components, labeled A, B, C, D, and E in Fig.\ref{fig_system}.
 \begin{itemize}
@@ -90,7 +113,7 @@ Fig.\ref{fig_app} shows the two pages of the mobile app.
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width = 8cm]{graphics/app.png}
-	\caption{Mobile app: Left - shows the field devices nearby for the worker to select his device, Right - worker selects the collected data to be sent to the cloud database}
+	\caption{Mobile app: Left - the nearby field devices for the worker to select his device, Right - worker selects the collected data to be sent to the cloud database}
 	\label{fig_app}
 \end{figure}
 Workers carry the mobile app with them only once, during the registration of trees and fruits. The mobile app connects to the hand device of the worker through Bluetooth. When the worker scans an RFID tag, the ID is fetched to the mobile app where it is added with the GPS (Global Positioning System) information, block number, and sub-block number. The mango orchard is divided into larger blocks, and each block is divided into sub-blocks.
@@ -168,23 +191,23 @@ A smart solution for fruit monitoring and orchard task scheduling has been desig
 In small worker group deployment, once a fruit is treated by a worker, all of the workers in the group get their information updated through the local WiFi mesh network. This eliminates workers approaching an already treated fruit, or leaving fruits without treatment. Hence, the proposed solution maintains accuracy and effectiveness in fruit treatment and worker deployment, which improves the quality and quantity of yield, and productivity of the workers. Small worker group deployment makes the proposed solution extremely cost-effective and deployable independent of the scale of the orchard. The proposed solution, though customized to mango, could be modified to other similar fruits.
 The functionality of the proposed method was verified through a field test in which the entire process was tested end-to-end. It was verified that the proposed solution is highly cost-effective, technically feasible, and deployable independent of the scale of the orchard. The component cost per field device was just \$25 and even for a large orchard, only about fifty field units are required in small worker group deployment. In addition, cloud database subscription (\$75/year), mobile data charge (\$100/year), and one-time software development costs (\$1600) are involved. The system was designed for mango, however, it could be customized to other fruits of a similar nature.
 \section{Acknowledgement}
-This project was supported by Nelna Private Limited, the largest mango producer in Sri Lanka.
+This project was non-monetarily supported by Nelna Agri (Pvt.) Ltd, Sri Lanka. The authors acknowledge the valuable support from Prof. Lori Leonard, Prof. Ronnie Coffman, and Prof. Richard Cahoon of the Department of Global Development, CALS, and the AgriTech faculty of Cornell University, USA.
 \balance
 \begin{thebibliography}{1}
 \bibitem{apple}
 C.~Wu, H.~Zhang, J.~Zhang, W.~Tian, and H.~Cheng, ``An orchard management system with rfid-based apple tree identify detection,'' in Fourth International Conference on Digital Manufacturing and Automation, pp.~180--184, 2013.
 \bibitem{RFID}
-``Rfid basics and resources'', https://rfid4u.com/rfid-basics-resources.
+“Explore RFID Basics | RFID Tracking and Inventory,” Available online: https://rfid4u.com/rfid-basics-resources/
 \bibitem{behera2021tree}
 S.~K. Behera, P.~K. Sethy, S.~K. Sahoo, S.~Panigrahi, and S.~C. Rajpoot, ``On-tree fruit monitoring system using iot and image analysis", Concurrent Engineering, vol.~29, no.~1, pp.~6--15, 2021.
 \bibitem{EU2020}
-EU Horizon project, ``Artificial intelligence for yield estimations at fruit orchards", Codesian Software Tech SL, Spain, DOI 10.3030/888783, 2020
+“Artificial intelligence for yield estimations at fruit orchards | AGERPIX Project | Fact Sheet | H2020,” CORDIS | European Commission, 2020, online  https://cordis.europa.eu/project/id/888783
 \bibitem{Yuan}
 H.~Yang, B.~Kuang and A.~M.~Mouazen, "Wireless Sensor Network for Orchard Management," 2011 Third International Conference on Measuring Technology and Mechatronics Automation, Shanghai, China, 2011, pp. 1162-1165, doi: 10.1109/ICMTMA.2011.859.
 \bibitem{Suryawansi}
 S. Suryawanshi, T. Baraskar, K. Umbrani and A. Chitnis, "Using Drone Technology for Fruit Orchard Management and Waste Reduction," 2022 6th International Conference On Computing, Communication, Control And Automation (ICCUBEA, Pune, India, 2022, pp. 1-9, doi: 10.1109/ICCUBEA54992.2022.10010999.
 \bibitem{Mengoli}
-D. Mengoli, R. Tazzari and L. Marconi, "Autonomous Robotic Platform for Precision Orchard Management: Architecture and Software Perspective," 2020 IEEE International Workshop on Metrology for Agriculture and Forestry (MetroAgriFor), Trento, Italy, 2020, pp. 303-308, doi: 10.1109/MetroAgriFor50201.2020.9277555.
+D. Mengoli, R. Tazzari and L. Marconi, "Autonomous Robotic Platform for Precision Orchard Management: Architecture and Software Perspective," 2020 IEEE Intl.  Workshop on Metrology for Agriculture and Forestry, pp. 303-308, Tento, Italy, 2020.
 \bibitem{Tsoulias}
 N. Tsoulias, G. Xanthopoulos, S. Fountas and M. Zude, "In-situ detection of apple fruit using a 2D LiDAR laser scanner," 2020 IEEE International Workshop on Metrology for Agriculture and Forestry (MetroAgriFor), Trento, Italy, 2020, pp. 278-282, doi: 10.1109/MetroAgriFor50201.2020.9277629.
 \bibitem{Ruiz}
@@ -200,7 +223,7 @@ D.~Rimpas and A.~Kiatipis, ``Charging strategy effect on lithium polymer battery
 K.~K.C, ``Wireless mesh network: A survey,'' in {\em 2016 International
 Conference on Wireless Communications, Signal Processing and Networking (WiSPNET)}, pp.~1966--1970, 2016.
 \bibitem{rtos}
-M.-Y. Zhu, ``Understanding freeRTOS: A requirement analysis,'' 05 2011.
+M.-Y. Zhu, “Understanding FreeRTOS: A Requirement Analysis,” May 2011, doi: 10.13140/RG.2.2.12419.09767.
 \bibitem{rfid_1356Mz}
 V.~Cernatescu and M.~Vladescu, ``An implementation of a 13.56 mhz rfid
 reader,'' in {\em 2014 IEEE 20th International Symposium for Design and
@@ -208,7 +231,7 @@ Technology in Electronic Packaging (SIITME)}, pp.~103--104, 2014.
 \bibitem{webVsDesk}
 P.~M.~Martin Löfberg, ``Web vs. standalone application'' http://www.diva-portal.org/smash/record.jsf?pid=diva23A828988\&dswid=7259, 2005.
 \bibitem{jones2015json}
-M.~Jones, J.~Bradley, and N.~Sakimura, ``Json web token (jwt),'' tech. rep., 2015.
+M.~B.~Jones, J.~Bradley, and N.~Sakimura, “JSON Web Token (JWT),” RFC 7519, Tech. Rep., May 2015, https://datatracker.ietf.org/doc/rfc7519/
 \bibitem{gyHorodi2015comparative}
 C.~Gy{\H{o}}r{\"o}di, R.~Gy{\H{o}}r{\"o}di, G.~Pecherle, and A.~Olah, ``A comparative study: Mongodb vs. mysql,'' in {\em 2015 13th International Conference on Engineering of Modern Electric Systems (EMES)}, pp.~1--6, IEEE, 2015.
 \end{thebibliography}
